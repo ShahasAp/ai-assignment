@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        </style>
+    <title>Result</title>
+</head>
+<body>
+<header>
+        <h1>Odd and Even Number Tutor</h1>
+</header>
+    <h1>Result</h1>
+    <p>{{ result }}</p>
+    <p>{{ feedback }}</p>
+<div class="content">
+    <button onclick="goBack()">Go Back</button>
+</div>
+    <script class="content">
+        function goBack() {
+            if (history.length > 1) {
+                history.back();
+            } else {
+                alert("No pages in the history to go back to!");
+            }
+        }
+    </script>
+</body>
+</html>

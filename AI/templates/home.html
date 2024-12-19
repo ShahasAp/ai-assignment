@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odd or Even Tutorial</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 0;
+            margin: 20px 0;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+
+</head>
+<body>
+<header>
+        <h1>Odd and Even Number Tutor</h1>
+        <nav>
+            <a href="#section4">Odd or Even Tutorial</a>
+            <a href="#section1">Odd or Even Game</a>
+            <a href="#section2">Number Guessing Game</a>
+            <a href="#section3">Sorting Game</a>
+        </nav>
+    </header>
+    <section id="section4">
+    <h1>Welcome to Odd or Even Tutorial</h1>
+    <p>Enter a number below to check if it's odd or even.</p>
+    <form action="/check" method="post">
+        <input type="text" name="number" placeholder="Enter a number" required>
+        <button type="submit">Check</button>
+    </form>
+    <!-- Sections -->
+    <section id="section1">
+        <h1>Odd or Even Puzzle Game</h1>
+        <button onclick="playOddEvenGame()">Play Odd or Even</button>
+        <div id="result"></div>
+        <button onclick="scrollToSection('section2')">Go to Next Section</button>
+    </section>
+
+    <section id="section2">
+        <h1>Number Guessing Game</h1>
+        <p>Guess if the computer-generated number is Odd or Even.</p>
+        <button onclick="playNumberGuessingGame()">Play Number Guessing</button>
+        <div id="guessResult"></div>
+        <button onclick="scrollToSection('section3')">Go to Next Section</button>
+    </section>
+
+    <section id="section3">
+        <h1>Odd/Even Sorting Game</h1>
+        <p>Sort the numbers into Odd and Even categories.</p>
+        <button onclick="startSortingGame()">Start Sorting Game</button>
+        <div id="sortingGame"></div>
+        <div id="sortingResult"></div>
+        <button onclick="scrollToSection('section1')">Go Back to Top Section</button>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopButton" onclick="scrollToTop()">↑</button>
+
+    <footer>
+        <p>&copy; 2024 Odd and Even Number Tutor</p>
+    </footer>
+
+    <script>
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Function to Scroll to Specific Section
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Function to Scroll to Top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show Scroll-to-Top Button on Scroll
+        const scrollTopButton = document.getElementById('scrollTopButton');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopButton.style.display = 'block';
+            } else {
+                scrollTopButton.style.display = 'none';
+            }
+        });
+
+        // Game Functions (Same as Before)
+        function playOddEvenGame() {
+            let userInput = prompt("Enter a number to check if it's odd or even:");
+            if (userInput === null || userInput.trim() === "" || isNaN(userInput)) {
+                document.getElementById("result").innerHTML = "Please enter a valid number.";
+                return;
+            }
+
+            let number = parseInt(userInput);
+            if (number % 2 === 0) {
+                document.getElementById("result").innerHTML = `The number <b>${number}</b> is <b>Even</b>.`;
+            } else {
+                document.getElementById("result").innerHTML = `The number <b>${number}</b> is <b>Odd</b>.`;
+            }
+        }
+
+        function playNumberGuessingGame() {
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            const guess = prompt("Guess if the number is Odd or Even (type 'odd' or 'even'):");
+            const correctAnswer = randomNumber % 2 === 0 ? 'even' : 'odd';
+
+            if (guess && guess.toLowerCase() === correctAnswer) {
+                document.getElementById("guessResult").innerHTML = `Correct! The number was ${randomNumber} and it is ${correctAnswer.toUpperCase()}.`;
+            } else {
+                document.getElementById("guessResult").innerHTML = `Wrong! The number was ${randomNumber} and it is ${correctAnswer.toUpperCase()}.`;
+            }
+        }
+
+        function startSortingGame() {
+            const randomNumbers = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100) + 1);
+            let output = `<p>Numbers: ${randomNumbers.join(", ")}</p>`;
+            output += `<p>Type "odd" or "even" in the prompt to sort each number.</p>`;
+            document.getElementById("sortingGame").innerHTML = output;
+
+            let oddNumbers = [];
+            let evenNumbers = [];
+
+            randomNumbers.forEach(num => {
+                let userGuess = prompt(`Is ${num} Odd or Even? (type 'odd' or 'even')`);
+                if (userGuess) {
+                    if (userGuess.toLowerCase() === "even" && num % 2 === 0) evenNumbers.push(num);
+                    else if (userGuess.toLowerCase() === "odd" && num % 2 !== 0) oddNumbers.push(num);
+                }
+            });
+
+            document.getElementById("sortingResult").innerHTML = `
+                <p>You sorted these correctly:</p>
+                <p>Odd Numbers: ${oddNumbers.join(", ")}</p>
+                <p>Even Numbers: ${evenNumbers.join(", ")}</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>

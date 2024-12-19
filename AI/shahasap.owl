@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#EvenNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Feedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#OddNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Progress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Quiz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#User"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasCompletionRate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasProgress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasScore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#improvesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#isDivisibleBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#isEvaluatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#isIdentifiedAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#usesResource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasCompletionRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#isDivisibleBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#isIdentifiedAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#EvenNumber"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Feedback"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Game"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Number"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#OddNumber"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Performance"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Progress"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Quiz"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Score"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Student"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Teacher"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#User"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasActivity"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasCompletionRate"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasName"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasProgress"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasScore"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasType"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Number"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasValue"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Number"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#improvesWith"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#isDivisibleBy"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#EvenNumber"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#isEvaluatedBy"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#isIdentifiedAs"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#OddNumber"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#participatesIn"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#usesResource"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasActivity"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#hasProgress"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Progress"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#improvesWith"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Feedback"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#isEvaluatedBy"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Performance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#participatesIn"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Desktop/ontology8.xml#Activity"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
